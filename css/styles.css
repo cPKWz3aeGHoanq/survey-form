@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:200i,400&display=swap");
+
+form,
+div {
+  display: flex;
+  flex-direction: column;
+}
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  background: var(--color-darkblue);
+  background-image: linear-gradient(
+      145deg,
+      rgba(7, 5, 117, 0.705),
+      rgba(250, 0, 217, 0.027)
+    ),
+    url(https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+form {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 4em 3em;
+  border-radius: 5px;
+}
+
+body {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: fit-content;
+  font-family: "Poppins";
+  font-size: 1.125rem;
+}
+header {
+  text-align: center;
+}
+div {
+  margin-top: 1em;
+}
+
+label {
+  margin-bottom: 0.5em;
+}
+@media (min-width: 576px) {
+  #container {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  #container {
+    max-width: 720px;
+  }
+}
+
+#container {
+  width: 100%;
+}
+#comments-txt-area {
+  font-size: 1.125rem;
+}
+
+button {
+  padding: 0.75rem;
+  background: rgb(128, 0, 128);
+
+  border-radius: 2px;
+  color: inherit;
+  border-style: hidden;
+  cursor: pointer;
+}
+
+button:hover {
+  background: rgb(179, 123, 179);
+}

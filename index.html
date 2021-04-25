@@ -2,118 +2,136 @@
   <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
-  <header>
-    <h1 id="title">freeCodeCamp Survey Form</h1>
-    <p id="description">
-      Thank you for taking the time to help us improve the platform
-    </p>
-  </header>
-  <main>
-    <form id="survey-form">
-      <label for="name" id="name-label">Name</label>
-      <input id="name" type="text" required placeholder="Enter your name" />
-      <label for="email" id="email-label">Email</label>
-      <input id="email" type="email" required placeholder="Enter your email" />
-      <label for="number" id="number-label">Age</label>
-      <input
-        id="number"
-        min="18"
-        max="150"
-        type="number"
-        placeholder="Enter your age"
-      />
-
-      <label for="dropdown"
-        >Which option best describes your current role?</label
-      >
-      <select name="occupation" id="dropdown">
-        <option value="" selected disabled>Select current role</option>
-        <option value="student">Student</option>
-        <option value="full time worker">Full Time Job</option>
-        <option value="full time learner">Full Time Learner</option>
-        <option value="other">Other</option>
-      </select>
-
-      <div>
-        <p>Would you recommend freeCodeCamp to a friend?</p>
-        <label for="definitly-rb"
-          ><input
-            type="radio"
-            name="recommend"
-            id="definitly-rb"
-            value="definitly"
+  <div id="container">
+    <header>
+      <h1 id="title">freeCodeCamp Survey Form</h1>
+      <p id="description">
+        Thank you for taking the time to help us improve the platform
+      </p>
+    </header>
+    <main>
+      <form id="survey-form">
+        <div>
+          <label for="name" id="name-label">Name</label>
+          <input id="name" type="text" required placeholder="Enter your name" />
+        </div>
+        <div>
+          <label for="email" id="email-label">Email</label>
+          <input
+            id="email"
+            type="email"
+            required
+            placeholder="Enter your email"
           />
-          Definitly</label
-        >
-        <label for="maybe-rb"
-          ><input type="radio" name="recommend" id="maybe-rb" value="maybe" />
-          Maybe</label
-        >
-        <label for="not-sure-rb"
-          ><input
-            type="radio"
-            name="recommend"
-            id="not-sure-rb"
-            value="not sure"
+        </div>
+        <div>
+          <label for="number" id="number-label">Age</label>
+          <input
+            id="number"
+            min="18"
+            max="150"
+            type="number"
+            placeholder="Enter your age"
           />
-          Not sure</label
-        >
-      </div>
+        </div>
+        <div>
+          <label for="dropdown"
+            >Which option best describes your current role?</label
+          >
+          <select name="occupation" id="dropdown">
+            <option value="" selected disabled>Select current role</option>
+            <option value="student">Student</option>
+            <option value="full time worker">Full Time Job</option>
+            <option value="full time learner">Full Time Learner</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
 
-      <div>
-        <p>What would you like to see improved? (Check all that apply)</p>
-        <label for="front-end-cb"
-          ><input
-            name="improvements"
-            type="checkbox"
-            value="front end"
-            id="front-end-cb"
-          />Front-end Projects</label
-        >
-        <label for="back-end-cb"
-          ><input
-            name="improvements"
-            type="checkbox"
-            value="back end"
-            id="back-end-cb"
-          />Back-end Projects</label
-        >
-        <label for="data-vis-cb"
-          ><input
-            name="improvements"
-            type="checkbox"
-            value="data visualization"
-            id="data-vis-cb"
-          />Data Visualization</label
-        >
-        <label for="challenges-cb"
-          ><input
-            name="improvements"
-            type="checkbox"
-            value="challenges"
-            id="challenges-cb"
-          />Challenges</label
-        >
-        <label for="open-src-cb"
-          ><input
-            type="checkbox"
-            value="open source community"
-            id="open-src-cb"
-            name="improvements"
-          />Open Source Community</label
-        >
-      </div>
-      <div>
-        <label for="comments-txt-area">Any comments or suggestions?</label>
-        <textarea
-          id="comments-txt-area"
-          rows="4"
-          cols="50"
-          placeholder="Enter your comment here.."
-        ></textarea>
-      </div>
-      <button id="submit" type="submit">Submit</button>
-    </form>
-  </main>
+        <div>
+          <p>Would you recommend freeCodeCamp to a friend?</p>
+          <label for="definitly-rb"
+            ><input
+              type="radio"
+              name="recommend"
+              id="definitly-rb"
+              value="definitly"
+            />
+            Definitly</label
+          >
+          <label for="maybe-rb"
+            ><input type="radio" name="recommend" id="maybe-rb" value="maybe" />
+            Maybe</label
+          >
+          <label for="not-sure-rb"
+            ><input
+              type="radio"
+              name="recommend"
+              id="not-sure-rb"
+              value="not sure"
+            />
+            Not sure</label
+          >
+        </div>
+
+        <div>
+          <p>What would you like to see improved? (Check all that apply)</p>
+          <label for="front-end-cb"
+            ><input
+              name="improvements"
+              type="checkbox"
+              value="front end"
+              id="front-end-cb"
+            />Front-end Projects</label
+          >
+          <label for="back-end-cb"
+            ><input
+              name="improvements"
+              type="checkbox"
+              value="back end"
+              id="back-end-cb"
+            />Back-end Projects</label
+          >
+          <label for="data-vis-cb"
+            ><input
+              name="improvements"
+              type="checkbox"
+              value="data visualization"
+              id="data-vis-cb"
+            />Data Visualization</label
+          >
+          <label for="challenges-cb"
+            ><input
+              name="improvements"
+              type="checkbox"
+              value="challenges"
+              id="challenges-cb"
+            />Challenges</label
+          >
+          <label for="open-src-cb"
+            ><input
+              type="checkbox"
+              value="open source community"
+              id="open-src-cb"
+              name="improvements"
+            />Open Source Community</label
+          >
+        </div>
+
+        <div>
+          <label for="comments-txt-area">Any comments or suggestions?</label>
+          <textarea
+            id="comments-txt-area"
+            rows="4"
+            cols="50"
+            placeholder="Enter your comment here.."
+          ></textarea>
+        </div>
+        <div>
+          <button id="submit" type="submit">Submit</button>
+        </div>
+      </form>
+    </main>
+  </div>
+
   <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </body>
